@@ -366,8 +366,8 @@ body {
   border-radius: 4px;
   padding: 16px 32px;
   fill: #8e8f99;
-  width: 103px;
-  height: 55px;
+  width: 102px;
+  height: 54px;
 } 
 .icon:hover, :focus{
   border-color: var(--accent-color);
