@@ -71,11 +71,12 @@ body {
   padding-left: 16px;
   padding-top: 32px;
 }
-.conteiner-title:hover {
-  border-right: 0.5px solid #F4F4FD;
-  border-left: 0.5px solid #F4F4FD;
-  border-bottom: 0.5px solid #F4F4FD;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.conteiner-title:hover .conteiner-title:focus {
+  border-right: 0.5px solid #f4f4fd;
+  border-left: 0.5px solid #f4f4fd;
+  border-bottom: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .conteiner-filter {
   margin-left: auto;
@@ -122,7 +123,8 @@ body {
   color: var(--accent-color);
 }
 /* Список */
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--accent-color);
 }
 .menu-link {
@@ -155,7 +157,8 @@ body {
   padding-bottom: 24px;
   margin-left: 40px;
 }
-.mail-post:hover {
+.mail-post:hover,
+.mail-post:focus {
   color: var(--accent-color);
 }
 .mail-post {
@@ -217,30 +220,31 @@ body {
   margin-left: 0px;
 }
 
-.button-filters:hover {
+.button-filters:hover,
+.button-filters:focus {
   color: var(--main-color);
   background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Головна */
 .page-hero {
   margin-left: auto;
   margin-right: auto;
-}
-.hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  text-align: center;
   background-color: var(--link-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-size: auto, 1440px 600px, cover;
+  background-position: 50% 50%;
+}
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
 }
 .overlay {
 }
@@ -267,6 +271,7 @@ body {
 .page-last-section {
   padding-top: 120px;
   padding-bottom: 120px;
+  background: #f4f4fd;
 }
 .page-filter {
   padding-top: 96px;
@@ -361,24 +366,28 @@ body {
   column-gap: 24px;
 }
 
-.icon{
+.icon {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   padding: 16px 32px;
   fill: #8e8f99;
   width: 102px;
   height: 54px;
-} 
+
+}
+
 .icon:hover, :focus{
+
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-.icon-media{
+.icon-media {
   width: 40px;
   height: 40px;
   fill: #4d5ae5;
 }
-.icon-media:hover, :focus{
+.icon-media:hover,
+.icon-media:focus {
   fill: var(--accent-color);
 }
 .footer-subtitle {
@@ -413,7 +422,7 @@ body {
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
-.social-media{
+.social-media {
   column-gap: 24px;
   display: flex;
   text-align: center;
@@ -433,11 +442,10 @@ body {
 .list-item {
   width: 360px;
   cursor: pointer;
-
 }
-.list-item:hover {
-
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.list-item:hover .list-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .menu-list {
   display: flex;
@@ -473,26 +481,29 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 
   margin-bottom: 16px;
 }
-.title-footer{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-margin: 0;
-margin-bottom: 16px;
+.title-footer {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 16px;
 }
-.list-footer{
-column-gap: 16px;
+.list-footer {
+  column-gap: 16px;
 }
-.link-footer{
-width: 40px;
-height: 40px;
-fill: rgba(255, 255, 255, 1);;
+.link-footer {
+  width: 40px;
+  height: 40px;
+  fill: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
 }
-.link-footer:hover, :focus{
-  fill: #31D0AA;
+.link-footer:hover,
+.link-footer:focus {
+  background: #31d0aa;
 }
-.footer-social-media{
-margin-left: 120px;
+.footer-social-media {
+  margin-left: 120px;
 }
+
