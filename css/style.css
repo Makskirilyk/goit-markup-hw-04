@@ -213,6 +213,10 @@ body {
   flex-direction: row;
   padding: 0px;
 }
+.button:hover,
+.button:focus{
+  background-color: var(--accent-color);
+}
 .list-button .list-item-filter {
   margin-left: 24px;
 }
