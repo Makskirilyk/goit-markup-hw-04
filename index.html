@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    
     <!-- HEADER -->
     <header class="page-header">
         <!-- Navigation -->
@@ -30,7 +31,7 @@
             <nav class="navigation">
                 <a class="link logotype" href="./index.html">Web<span class="logotype-item">Studio</span></a>
                 <ul class="list menu-list">
-                    <li class="menu-item"><a class="link menu-link" href="./index.html">Studio</a></li>
+                    <li class="menu-item "><a class="link menu-link hover color" href="./index.html">Studio</a></li>
                     <li class="menu-item"><a class="link menu-link" href="./portfolio.html">Portfolio</a></li>
                     <li class="menu-item"><a class="link menu-link" href="">Contacts</a></li>
                 </ul>
@@ -44,13 +45,21 @@
             </address>
         </div>
     </header>
+    
     <!-- main -->
     <main>
         <!-- Section 1 -->
         <section class="page-hero">
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal">
+                    <button class="button-modal" type="button" data-modal-close></button>
+                </div>
+            </div>
             <div class="hero">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="button" type="button">Order Service</button>
+                <button data-modal-open class="button" type="button">Order Service</button>
+            </div>
+            
             </div>
         </section>
         <!-- Section 2 -->
@@ -270,6 +279,7 @@
             </div>
         </div>
     </footer>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
